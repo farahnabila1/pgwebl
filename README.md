@@ -1,66 +1,43 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# ShopSpot Surabaya : Jejak Mall Melalui Lensa WebGIS
+## Deskripsi Project
+**ShopSpot Surabaya : Jejak Mall Melalui Lensa WebGIS** Jejak Mall Melalui Lensa WebGIS adalah platform inovatif yang memanfaatkan teknologi WebGIS untuk memvisualisasikan dan memudahkan akses terhadap informasi geografis tentang mall-mall di Surabaya. Dengan fitur peta interaktif yang dinamis, pengguna dapat dengan mudah menjelajahi lokasi mall, memilih dari berbagai layer basemap untuk perspektif yang berbeda, dan melihat data distribusi mall dalam bentuk tabel. Hal ini tidak hanya mendukung perencanaan dan pengembangan kota dengan pemahaman yang lebih baik tentang struktur ruang kota, tetapi juga memberikan kemudahan bagi warga dan pengunjung untuk merencanakan kunjungan mereka dengan informasi yang akurat dan terkini. Dengan integrasi teknologi Leaflet.js dan data geografis yang komprehensif, platform ini tidak hanya menjadi alat analisis yang kuat bagi pemerintah dan pengembang properti, tetapi juga memfasilitasi pengambilan keputusan strategis dalam bisnis dan menyediakan sumber informasi yang bermanfaat bagi masyarakat umum.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Komponen Pembangun
 
-## About Laravel
+### 1. Framework Laravel
+Framework PHP yang sangat populer untuk membangun aplikasi web, termasuk aplikasi WebGIS.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### 2. Database Management
+DBeaver adalah salah satu tools yang bisa digunakan untuk mengelola database, termasuk dalam konteks pengembangan aplikasi WebGIS. 
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 3. QGIS
+QGIS adalah aplikasi desktop open-source yang kuat untuk analisis dan visualisasi data geospasial. Dalam konteks Anda, QGIS dapat digunakan untuk mengelola data SHP (Shapefile) dan mengkonversinya ke format GeoJSON.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 4. Bootstrap
+Bootstrap adalah library CSS digunakan untuk membangun tata letak responsif dan UI yang menarik. Dalam konteks WebGIS, Bootstrap digunakan untuk membangun tata letak responsif.
 
-## Learning Laravel
+### 5. LeafletJS
+LeafletJS adalah pustaka JavaScript open-source yang digunakan untuk membangun aplikasi web peta interaktif. Leaflet menyediakan API yang intuitif untuk menampilkan peta, marker, poligon, dan interaksi pengguna lainnya.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Sumber Data
+**Sumber Data** WebGIS ShopSpot Surabaya ini disusun dengan menggunakan beberapa sumber data yang meliputi :
+- Google Maps : Mencari titik lokasi Mall di Kota Surabaya.
+- Data Shapefile : Shapefile Batas Administrasi di Kota Surabaya.
+- Sosial Media : Instagram, Twitter, dan Youtube
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+# Tangkapan Layar Komponen Penting
+*Landing Page*
+![Tangkapan Layar 1](lp1.png)
+![Tangkapan Layar 1](lp2.png)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+*Dashboard*
+![Tangkapan Layar 2](dsb.png)
 
-## Laravel Sponsors
+*Peta Interaktif*
+![Tangkapan Layar 3](pt.png)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+*Tabel Titik Mall*
+![Tangkapan Layar 4](tbl.png)
 
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+*Informasi*
+![Tangkapan Layar 5](inf.png)
